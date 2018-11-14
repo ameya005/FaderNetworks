@@ -78,7 +78,7 @@ class AutoEncoder(nn.Module):
 
     def __init__(self, params):
         super(AutoEncoder, self).__init__()
-
+        self.all_params = params
         self.img_sz = params.img_sz
         self.img_fm = params.img_fm
         self.instance_norm = params.instance_norm
